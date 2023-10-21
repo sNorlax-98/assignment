@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 uri = "mongodb+srv://snorlax-98:Anupam1234_@cluster0.sgrnwcn.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(uri, server_api=ServerApi('1'))
-db = client["todo-list"]  # Replace "todo-list" with your actual database name
+db = client["todo-list"] 
 todos_collection = db["todos"]
 
 
